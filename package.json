@@ -1,0 +1,34 @@
+{
+  "name": "shader",
+  "version": "1.0.0",
+  "description": "cityboy shader test",
+  "main": "index.js",
+  "scripts": {
+    "serve": "webpack-dev-server",
+    "build:prod": "webpack --mode production",
+    "build:dev": "webpack --mode development"
+  },
+  "keywords": [],
+  "author": "cityboy",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-loader": "^8.1.0",
+    "@babel/core": "^7.10.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.5.3",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.2.0",
+    "style-loader": "^1.2.1",
+    "three": "^0.116.1",
+    "ts-loader": "^7.0.4",
+    "file-loader": "^6.0.0",
+    "tsconfig-paths-webpack-plugin": "3.2.0",
+    "typescript": "^3.9.2",
+    "webpack": "^4.43.0",
+    "dat.gui": "^0.7.7",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
