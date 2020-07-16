@@ -28,7 +28,7 @@ export default class MyWorld {
 
         this.renderer = new THREE.WebGLRenderer();
         this.renderer.setPixelRatio(window.devicePixelRatio);
-        this.renderer.setSize(window.innerWidth, window.innerHeight);
+        this.renderer.setSize(400, 400); //(window.innerWidth *, window.innerHeight
         this.uniforms.u_resolution.value.x = this.renderer.domElement.width;
         this.uniforms.u_resolution.value.y = this.renderer.domElement.height;
 
@@ -37,7 +37,7 @@ export default class MyWorld {
 
 
         window.addEventListener('resize', (event) => {
-            this.renderer.setSize(window.innerWidth, window.innerHeight);
+            this.renderer.setSize(400,400); //window.innerWidth, window.innerHeight
             this.uniforms.u_resolution.value.x = this.renderer.domElement.width;
             this.uniforms.u_resolution.value.y = this.renderer.domElement.height;
         }, false);
@@ -46,7 +46,7 @@ export default class MyWorld {
         //循环渲染
         function render() {
             requestAnimationFrame(render);
-            self.uniforms.u_time.value += .05;
+            self.uniforms.u_time.value += .01;
             self.renderer.render(self.scene, self.camera);
         }
     }
